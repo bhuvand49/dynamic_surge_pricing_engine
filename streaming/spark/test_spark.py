@@ -1,0 +1,1 @@
+print("Spark streaming environment ready.")
