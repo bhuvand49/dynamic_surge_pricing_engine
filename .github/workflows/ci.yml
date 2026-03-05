@@ -1,4 +1,4 @@
-name: CI/CD Pipeline
+name: US-005 Automation Pipeline
 
 on:
   push:
