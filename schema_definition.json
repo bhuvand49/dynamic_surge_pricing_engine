@@ -1,9 +1,0 @@
-{
-  "event_type": "driver_location_update",
-  "fields": {
-    "driver_id": "string (UUID)",
-    "latitude": "float (-90 to 90)",
-    "longitude": "float (-180 to 180)",
-    "timestamp": "ISO-8601 string"
-  }
-}
