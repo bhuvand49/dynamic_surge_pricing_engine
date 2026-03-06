@@ -21,4 +21,4 @@ jobs:
       - name: Set up Docker
         uses: docker/setup-buildx-action@v3
       - name: Build Docker Containers
-        run: docker compose build n\
+        run: docker compose build 
