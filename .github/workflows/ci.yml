@@ -4,9 +4,13 @@ on:
   push:
     branches:
       - feature/automation-pipeline
+      - main
+      - DEV
   pull_request:
     branches:
       - feature/automation-pipeline
+      - main
+      
 
 jobs:
   build:
