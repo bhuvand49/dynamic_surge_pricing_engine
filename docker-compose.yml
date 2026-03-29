@@ -1,23 +1,22 @@
 services:
-  app:
-    build: .
-    container_name: surge_app
+
+  demand_service:
+    build: ./services/demand
+    container_name: demand_service
+
+  supply_service:
+    build: ./services/supply
+    container_name: supply_service
+
+  surge_service:
+    build: ./services/surge
+    container_name: surge_service
     depends_on:
-      - redis
-    ports:
-      - "5000:5000"
+      - demand_service
+      - supply_service
 
   redis:
-    image: redis:7
+    image: redis:latest
     container_name: surge_redis
     ports:
       - "6379:6379"
-
-  spark:
-    image: apache/spark:3.5.1
-    container_name: surge_spark
-    command: >
-      /opt/spark/bin/spark-class
-      org.apache.spark.deploy.master.Master
-    ports:
-      - "8080:8080"

@@ -8,3 +8,6 @@ def process_supply(event):
         supply_count[zone] += 1
 
     return supply_count
+
+def get_supply(zone):
+    return supply_count[zone]

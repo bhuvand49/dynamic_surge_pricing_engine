@@ -7,4 +7,5 @@ def process_demand(event):
         zone = event["zone_id"]
         demand_count[zone] += 1
 
-    return demand_count
+def get_demand(zone):
+    return demand_count[zone]
