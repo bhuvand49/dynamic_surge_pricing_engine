@@ -1,4 +1,6 @@
-import os
-
-redis_host = os.getenv("REDIS_HOST", "localhost")
-print("Dynamic Surge Pricing Engine Running...")
+try:
+    import redis
+    r = redis.Redis(host="localhost", port=6379)
+    r.ping()
+except:
+    r = None
