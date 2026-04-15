@@ -22,7 +22,7 @@ def validate_event(data):
 if __name__ == "__main__":
     test_data = {
         "driver_id": "DRV-123",
-        "latitude": 12.9716, # Bangalore lat
+        "latitude": 12.9716, # Bangalore latitude
         "longitude": 77.5946,
         "timestamp": "2026-03-06T23:00:00Z"
     }
