@@ -1,3 +1,4 @@
+# US-017 implementation
 import psycopg2
 from datetime import datetime
 
